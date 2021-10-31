@@ -19,7 +19,7 @@ depend: [DYDuels]
 
 ```java
 DYDuels api = null;
-Plugin plugin = Bukkit.getPluginManager().getPlugin("DyDuels");
+Plugin plugin = Bukkit.getPluginManager().getPlugin("DYDuels");
 if (plugin != null && plugin.isEnabled()) {
     api = (DYDuels) plugin;
     
