@@ -16,10 +16,9 @@ DYDuels api = null;
 Plugin plugin = Bukkit.getPluginManager().getPlugin("DyDuels");
 if (plugin != null && plugin.isEnabled()) {
     api = (DYDuels) plugin;
+    KitManager kitManager = api.getKitManager();
+    ArenaManager arenaManager = api.getArenaManager();
+    SpectateManager spectateManager = api.getSpectateManager();
+    UserManager userManager = api.getUserManager();
 }
-
-KitManager kitManager = api.getKitManager();
-ArenaManager arenaManager = api.getArenaManager();
-SpectateManager spectateManager = api.getSpectateManager();
-UserManager userManager = api.getUserManager();
 ```
