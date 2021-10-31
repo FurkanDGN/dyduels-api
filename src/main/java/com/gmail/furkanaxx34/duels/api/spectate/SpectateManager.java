@@ -1,7 +1,7 @@
 package com.gmail.furkanaxx34.duels.api.spectate;
 
 import com.gmail.furkanaxx34.duels.api.arena.Arena;
-import com.gmail.furkanaxx34.duels.api.loadable.Loadable;
+import com.gmail.furkanaxx34.duels.api.util.Loadable;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

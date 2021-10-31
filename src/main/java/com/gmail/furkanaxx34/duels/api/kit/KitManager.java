@@ -1,6 +1,6 @@
 package com.gmail.furkanaxx34.duels.api.kit;
 
-import com.gmail.furkanaxx34.duels.api.loadable.Loadable;
+import com.gmail.furkanaxx34.duels.api.util.Loadable;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
