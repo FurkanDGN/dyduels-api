@@ -3,7 +3,7 @@
 ## Clone & Install
 The following steps will ensure your project is cloned and installed properly.
 
-1. `https://github.com/FurkanDGN/dyduels-api.git`
+1. `git clone https://github.com/FurkanDGN/dyduels-api.git`
 2. `cd dyduels-api`
 3. `mvn install`
 
