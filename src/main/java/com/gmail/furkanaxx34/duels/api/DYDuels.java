@@ -4,11 +4,20 @@ import com.gmail.furkanaxx34.duels.api.arena.ArenaManager;
 import com.gmail.furkanaxx34.duels.api.command.SubCommand;
 import com.gmail.furkanaxx34.duels.api.kit.KitManager;
 import com.gmail.furkanaxx34.duels.api.spectate.SpectateManager;
+import com.gmail.furkanaxx34.duels.api.user.UserManager;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 
 public interface DYDuels extends Plugin {
+
+    /**
+     * Gets the UserManager singleton used by Duels.
+     *
+     * @return UserManager singleton
+     */
+    @NotNull
+    UserManager getUserManager();
 
     /**
      * Gets the ArenaManager singleton used by Duels.
