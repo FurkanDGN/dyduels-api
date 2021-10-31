@@ -9,6 +9,12 @@ The following steps will ensure your project is cloned and installed properly.
 
 ## How to Use
 
+### Add plugin.yml Dependency
+
+```yaml
+depend: [DYDuels]
+```
+
 ### API Usage
 
 ```java
