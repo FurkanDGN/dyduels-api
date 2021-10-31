@@ -8,10 +8,10 @@ public interface Loadable {
     /**
      * loads the class.
      */
-    void handleLoad();
+    void handleLoad() throws Exception;
 
     /**
      * unloads the class.
      */
-    void handleUnload();
+    void handleUnload() throws Exception;
 }

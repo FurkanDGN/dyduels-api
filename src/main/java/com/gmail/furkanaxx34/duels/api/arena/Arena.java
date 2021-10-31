@@ -97,12 +97,4 @@ public interface Arena {
      * @return True if the player is in this arena. False otherwise.
      */
     boolean has(@NotNull final Player player);
-
-
-    /**
-     * Whether or not this {@link Arena} has been removed.
-     *
-     * @return True if this {@link Arena} has been removed. False otherwise.
-     */
-    boolean isRemoved();
 }

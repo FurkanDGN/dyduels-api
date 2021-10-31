@@ -18,16 +18,6 @@ public interface Kit {
     @NotNull
     String getName();
 
-
-    /**
-     * The item displayed in the kit selector gui.
-     *
-     * @return item displayed in the kit selector gui.
-     */
-    @NotNull
-    ItemStack getDisplayed();
-
-
     /**
      * Whether or not this kit requires a permission.
      * If usePermission is enabled, players must have the permission 'duels.kit.[name] (space in name replaced to dash)' to use the kit.
@@ -61,6 +51,19 @@ public interface Kit {
      */
     void setArenaSpecific(final boolean arenaSpecific);
 
+    /**
+     * Whether or not this kit has Characteristic property which specified.
+     *
+     * @param characteristic Characteristic enum to check.
+     * @return True if it has the Characteristic property, False otherwise.
+     */
+    boolean hasCharacteristic(final Characteristic characteristic);
+
+    /**
+     * Toggles the Characteristic property which specified
+     * @param characteristic Characteristic property to be toggled.
+     */
+    void toggleCharacteristic(final Characteristic characteristic);
 
     /**
      * Equips the {@link Player} with the contents of this kit.
@@ -70,12 +73,10 @@ public interface Kit {
      */
     boolean equip(@NotNull final Player player);
 
-
-    /**
-     * Whether or not this {@link Kit} has been removed.
-     *
-     * @return True if this {@link Kit} has been removed. False otherwise.
-     * @see KitManager#remove(CommandSender, String)
-     */
-    boolean isRemoved();
+    enum Characteristic {
+        SOUP,
+        SUMO,
+        UHC,
+        COMBO;
+    }
 }
