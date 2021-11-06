@@ -121,7 +121,7 @@ public final class Rooms {
    * @return completable future for room.
    */
   @NotNull
-  public CompletableFuture<@Nullable Room> getOrCreate(@NotNull final UUID uuid) {
+  public CompletableFuture<@NotNull Room> getOrCreate(@NotNull final UUID uuid) {
     if (Rooms.ROOMS.containsKey(uuid)) {
       return CompletableFuture.completedFuture(Rooms.ROOMS.get(uuid));
     }
@@ -179,17 +179,6 @@ public final class Rooms {
   }
 
   /**
-   * sets the room provider if it's not set yet.
-   *
-   * @param roomProvider the provider to set.
-   */
-  public void setRoomProvider(@NotNull final RoomProvider roomProvider) {
-    if (Rooms.roomProvider == null) {
-      Rooms.roomProvider = roomProvider;
-    }
-  }
-
-  /**
    * adds owner and room to {@link #ROOM_CACHE_BY_OWNER}.
    *
    * @param owner the owner to add.
@@ -202,6 +191,17 @@ public final class Rooms {
   @NotNull
   private static RoomProvider getRoomProvider() {
     return Objects.requireNonNull(Rooms.roomProvider, "room provider");
+  }
+
+  /**
+   * sets the room provider if it's not set yet.
+   *
+   * @param roomProvider the provider to set.
+   */
+  public void setRoomProvider(@NotNull final RoomProvider roomProvider) {
+    if (Rooms.roomProvider == null) {
+      Rooms.roomProvider = roomProvider;
+    }
   }
 
   /**

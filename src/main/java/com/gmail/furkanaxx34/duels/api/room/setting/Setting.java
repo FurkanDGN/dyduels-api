@@ -40,6 +40,12 @@ public interface Setting {
   @NotNull
   String getName();
 
+  default void setValue(int i) {}
+
+  default int getValue() {
+    return 0;
+  }
+
   /**
    * registers the permission.
    */

@@ -32,7 +32,7 @@ public final class Participants {
    *
    * @param participantProvider the provider to set.
    */
-  static void setParticipantProvider(@NotNull final ParticipantProvider participantProvider) {
+  public static void setParticipantProvider(@NotNull final ParticipantProvider participantProvider) {
     if (Participants.participantProvider == null) {
       Participants.participantProvider = participantProvider;
     }
