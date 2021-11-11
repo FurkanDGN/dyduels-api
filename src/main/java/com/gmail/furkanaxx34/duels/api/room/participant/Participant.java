@@ -72,4 +72,16 @@ public interface Participant {
    */
   @NotNull
   UUID getUniqueId();
+
+  /**
+   * obtains if the player feel ready true.
+   * @return {@code true} if the player feel ready true.
+   */
+  boolean isReady();
+
+  /**
+   * sets the player feels ready or not.
+   * @param ready the players what is feel.
+   */
+  void setReady(boolean ready);
 }

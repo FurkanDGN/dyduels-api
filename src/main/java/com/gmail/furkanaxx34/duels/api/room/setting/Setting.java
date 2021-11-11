@@ -1,5 +1,6 @@
 package com.gmail.furkanaxx34.duels.api.room.setting;
 
+import java.util.List;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -22,7 +23,7 @@ public interface Setting {
    * @return description.
    */
   @NotNull
-  String getDescription();
+  List<String> getDescription();
 
   /**
    * obtains the id.

@@ -25,7 +25,7 @@ public class Settings {
    * @return all registered settings
    */
   @NotNull
-  Collection<Setting> all() {
+  public Collection<Setting> all() {
     return Settings.SETTINGS.values();
   }
 
@@ -37,7 +37,7 @@ public class Settings {
    * @return setting.
    */
   @NotNull
-  Optional<Setting> get(@NotNull final String id) {
+  public Optional<Setting> get(@NotNull final String id) {
     return Optional.ofNullable(Settings.SETTINGS.get(id));
   }
 
@@ -47,7 +47,7 @@ public class Settings {
    * @return setting.
    */
   @NotNull
-  Collection<Setting> getSettings() {
+  public Collection<Setting> getSettings() {
     return Collections.unmodifiableCollection(Settings.SETTINGS.values());
   }
 
